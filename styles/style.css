@@ -171,7 +171,7 @@
 }
 
 .table__heading {
-  margin-top: 0;
+  margin: 0;
   line-height: 1.15;
   font-size: 24px;
   font-weight: 600;
@@ -189,7 +189,7 @@
 
 
 .feynman {
-  min-height: 890px;  /* подскажите пожалуйста, почему вы попросили здесь поставить минимальную высоту? в брифе написано: высота блока: 890px*/
+  min-height: 890px;
   background-color: #f2f2f2;
   display:flex;
   position: relative;
@@ -204,18 +204,18 @@
   height: 637px;
 }
 
-.feynman__section-title {
-  margin-top: 100px;
-  width: 648px;
+.feynman__title {
   text-align: center;
+  margin: 100px auto 0 auto;
+  width: 648px;
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
   z-index: 1;
 }
 
-.feynman__section-subtitle {
-  margin-top: 70px;
+.feynman__subtitle {
+  margin: 70px auto 0 auto;
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
@@ -267,7 +267,7 @@
   margin-top: 80px;
 }
 
-.kaufman__triangle-decoration {
+.kaufman__triangle {
   position: absolute;
   height: 877px;
   width: 877px;
@@ -275,6 +275,7 @@
   right: -210px;
   z-index: 0;
   background-image: url(../images/kaufman-triangle.svg);
+  background-size: cover;
 }
 
 
