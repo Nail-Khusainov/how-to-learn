@@ -1,3 +1,31 @@
+div { /*УДАЛИТЬ ПОСЛЕ*/
+  border: 1px solid red;
+} 
+
+div h1{ /*УДАЛИТЬ ПОСЛЕ*/
+  border: 1px solid red;
+}
+
+div p{ /*УДАЛИТЬ ПОСЛЕ*/
+  border: 1px solid red;
+}
+
+div h2{ /*УДАЛИТЬ ПОСЛЕ*/
+  border: 1px solid red;
+} 
+
+.logo {
+  border: 1px solid red; /*УДАЛИТЬ ПОСЛЕ*/
+}
+
+.link {
+  border: 1px solid red; /*УДАЛИТЬ ПОСЛЕ*/
+}
+
+.header__square-pic {
+  border: 1px solid red; /*УДАЛИТЬ ПОСЛЕ*/
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -21,6 +49,8 @@
   display:flex;
   align-items: center;
   position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
 }
 
 .logo {
@@ -81,7 +111,20 @@
   z-index: 1;
 }
 
-/*_____________________________DESCRIPTION BLOCK__________________________*/
+@keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+}
+
+.rotation {
+  animation: rotation 20s linear infinite;
+}
+
+/*_____________________________DISCRIPTION BLOCK__________________________*/
 
 
 .discription {
@@ -93,7 +136,7 @@
   display: flex;
   justify-content: space-between;
   width: 80%;
-  margin:100px auto;
+  margin: 0 auto;
 }
 
 .two-columns__brief {
@@ -127,11 +170,141 @@
   font-weight: 600;
 }
 
+/*_____________________________TECHNIQUES BLOCK__________________________*/
+
+.techniques {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  margin: 100px auto 0;
+  padding-bottom: 100px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  width: 920px;
+  margin:0 auto;
+  list-style: none;
+  padding: 0;
+}
+
+.cards__item {
+  width: 240px;
+  margin: 60px 100px 0 0;
+}
+
+.cards__item:nth-of-type(3n) {
+  margin-right: 0;
+}
+
+.cards__image {
+  width: 160px;
+  height: 160px;
+  margin: 0 40px 43px;
+  border-radius: 50%;
+}
+
+.cards__title {
+  text-align: center;
+  margin: 0 0 16px;
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.cards__discription {
+  text-align: center;
+  margin: 0;
+  line-height: 23px;
+  font-size: 18px;
+  font-weight: normal;
+}
+
+/*_____________________________VIDEO BLOCK__________________________*/
+.video {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.video__iframes {
+  margin: 50px auto -40px;
+}
+
+.video__iframe {
+  width: 515px;
+  height: 316px;
+  margin: 0 20px 0 0;
+}
+
+.video__iframe:last-child {
+  margin-right: 0;
+}
+
+/*_____________________________OAKLEY BLOCK__________________________*/
+
+.oakley {
+  background-color: #f2f2f2;
+  display:flex;
+  padding-top: 160px;
+}
+
+/*___________________________FEYNMAN BLOCK_______________________*/
+
+
+.feynman {
+  min-height: 890px;
+  background-color: #f2f2f2;
+  display:flex;
+  position: relative;
+  flex-direction: column;
+}
+
+.feynman__main-illustation {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 867px;
+  height: 637px;
+}
+
+.feynman__title {
+  text-align: center;
+  margin: 100px auto 0 auto;
+  width: 648px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: 600;
+  z-index: 1;
+}
+
+.feynman__subtitle {
+  margin: 70px auto 0 auto;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1;
+}
+
+.feynman__link {
+  position: absolute;
+  right: 48px;
+  top: 50%;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+
+
 /*_________________________________________DIGITS BLOCK__________________________________*/
 
 .digits {
   background-color: white;
   display:flex;
+  padding-top: 100px;
   padding-bottom: 100px;
   flex-direction:column;
 }
@@ -185,51 +358,7 @@
   font-weight: normal;
 }
 
-/*___________________________FEYNMAN BLOCK_______________________*/
 
-
-.feynman {
-  min-height: 890px;
-  background-color: #f2f2f2;
-  display:flex;
-  position: relative;
-  flex-direction: column;
-}
-
-.feynman__main-illustation {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 867px;
-  height: 637px;
-}
-
-.feynman__title {
-  text-align: center;
-  margin: 100px auto 0 auto;
-  width: 648px;
-  line-height: 1.15;
-  font-size: 120px;
-  font-weight: 600;
-  z-index: 1;
-}
-
-.feynman__subtitle {
-  margin: 70px auto 0 auto;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-  z-index: 1;
-}
-
-.feynman__link {
-  position: absolute;
-  right: 48px;
-  top: 50%;
-  line-height: 51px;
-  font-size: 36px;
-  font-weight: normal;
-}
 
 /*___________________________ KAUFMAN BLOCK____________________________*/
 
