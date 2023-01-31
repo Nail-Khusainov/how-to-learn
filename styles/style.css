@@ -298,7 +298,6 @@ div h2{ /*УДАЛИТЬ ПОСЛЕ*/
   font-weight: normal;
 }
 
-
 /*_________________________________________DIGITS BLOCK__________________________________*/
 
 .digits {
@@ -358,7 +357,75 @@ div h2{ /*УДАЛИТЬ ПОСЛЕ*/
   font-weight: normal;
 }
 
+/*_________________________________________KHAN BLOCK__________________________________*/
+.khan {
+  background-color: #f2f2f2;
+  padding-top: 105px;
+}
 
+.khan__container {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.khan__author {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.khan__title {
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.khan__quote {
+  width: 790px;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 60px 0 0 0;
+}
+
+.khan__quote-author {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: 600;
+  margin: 36px 0 0 0;
+}
+
+.khan__quote-author-subline {
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 10px 0 0 0;
+}
+
+.khan__book-container {
+  display: flex;
+  flex-direction: row;
+  margin: 68px 0 0 0;
+}
+
+.khan__book-pic {
+  width: 620px;
+  height: 608px;
+  object-fit: cover;
+  object-position: top;
+}
+
+.khan__buy-link {
+  line-height: 42px;
+  font-size: 30px;
+  font-weight: normal;
+  align-items: top;
+  margin: 0 0 0 48px;
+}
 
 /*___________________________ KAUFMAN BLOCK____________________________*/
 
@@ -406,6 +473,9 @@ div h2{ /*УДАЛИТЬ ПОСЛЕ*/
   background-image: url(../images/kaufman-triangle.svg);
   background-size: cover;
 }
+
+/*_____________________________ RESOURCES_______________________ */
+
 
 
 /*_____________________________ FOOTER BLOCK_______________________ */
