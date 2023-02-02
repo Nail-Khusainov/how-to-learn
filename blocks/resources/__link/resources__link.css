@@ -1,9 +1,9 @@
-.link {
+.resources__link {
     opacity: 1;
     transition: opacity .4s;
     transition-timing-function: ease;
   }
   
-  .link:hover {
-    opacity: .6;
+  .resources__link:hover {
+    opacity: .7;
   }
